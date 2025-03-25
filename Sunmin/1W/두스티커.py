@@ -22,31 +22,31 @@ for i in range(n):
             if ans < area:
                 ans = area
         # 돌리지 않고 아래
-        if c1 + c2 <= h and max(r1, r2) <= w:
+        elif c1 + c2 <= h and max(r1, r2) <= w:
             if ans < area:
                 ans = area
         # 2돌리고 옆에
-        if r1 + c2 <= w and max(c1, r2) <= h:
+        elif r1 + c2 <= w and max(c1, r2) <= h:
             if ans < area:
                 ans = area
         # 2돌리고 아래
-        if r1 + c2 <= h and max(c1, r2) <= w:
+        elif r1 + c2 <= h and max(c1, r2) <= w:
             if ans < area:
                 ans = area
         # 1돌리고 옆에
-        if c1 + r2 <= w and max(r1, c2) <= h:
+        elif c1 + r2 <= w and max(r1, c2) <= h:
             if ans < area:
                 ans = area
         # 1돌리고 아래
-        if c1 + r2 <= h and max(r1, c2) <= w:
+        elif c1 + r2 <= h and max(r1, c2) <= w:
             if ans < area:
                 ans = area
         # 둘다돌리고 옆
-        if c1 + c2 <= w and max(r1, r2) <= h:
+        elif c1 + c2 <= w and max(r1, r2) <= h:
             if ans < area:
                 ans = area
         # 둘다돌리고 아래
-        if r1 + r2 <= h and max(c1, c2) <= w:
+        elif r1 + r2 <= h and max(c1, c2) <= w:
             if ans < area:
                 ans = area
 print(ans)
